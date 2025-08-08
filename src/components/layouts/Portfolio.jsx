@@ -65,7 +65,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${theme.bg} text-white transition-all duration-500`}>
+    <div className={`min-h-screen h-full bg-gradient-to-br ${theme.bg} text-white transition-all duration-500`}>
       <Terminal
         terminalOpen={terminalOpen}
         terminalHeight={terminalHeight}

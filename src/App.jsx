@@ -3,7 +3,7 @@ import Portfolio from './components/layouts/Portfolio'
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black text-[#00cc00] font-mono">
+    <div className="min-h-screen">
       <Portfolio />
     </div>
   )

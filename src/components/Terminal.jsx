@@ -232,7 +232,7 @@ const Terminal = ({
       ref={terminalRef}
       className="fixed left-0 right-0 z-30 bg-black/95 backdrop-blur-sm border-b border-gray-700"
       style={{ 
-        top: '80px',
+        top: '72px',
         height: terminalHeight 
       }}
     >

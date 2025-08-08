@@ -108,7 +108,7 @@ const FullMarquee = () => {
       name: 'Theta Tau',
       displayName: 'ΘΤ',
       bgColor: 'bg-green-600',
-      subtitle: 'Theta Tau<br/>Professional Engineering<br/>Fraternity'
+      subtitle: 'Theta Tau'
     }
   ];
 
@@ -122,4 +122,4 @@ const FullMarquee = () => {
   );
 };
 
-export default FullMarquee;
+export default ScrollingMarquee;

@@ -1,6 +1,6 @@
 import { Mail, Linkedin, Briefcase, Code } from 'lucide-react';
 import Button from '../ui/Button';
-import FullMarquee from '../ui/ScrollingMarquee';
+import ScrollingMarquee from '../ui/ScrollingMarquee';
 
 const Hero = ({ theme, scrollToSection, refs = {} }) => (
   <section ref={refs.homeRef} className="min-h-screen pt-20 flex items-center">
@@ -60,8 +60,65 @@ const Hero = ({ theme, scrollToSection, refs = {} }) => (
             <span>View Projects</span>
           </Button>
         </div>
-
-        <FullMarquee />
+      </div>
+      
+      {/* Full-width marquee outside of the container */}
+      <div className="w-full">
+        <ScrollingMarquee 
+          title="Organizations I've worked with"
+          organizations={[
+            {
+              name: 'CesiumAstro',
+              displayName: 'CESIUM',
+              bgColor: 'bg-blue-600',
+            },
+            {
+              name: 'Blue Origin',
+              displayName: 'BO',
+              bgColor: 'bg-indigo-700',
+              logo: (
+                <>
+                  <div className="text-white font-bold text-lg">BO</div>
+                  <div className="absolute bottom-1 w-8 h-1 bg-white rounded-full"></div>
+                </>
+              )
+            },
+            {
+              name: 'Galileo CDS',
+              displayName: 'GALILEO',
+              bgColor: 'bg-purple-600',
+            },
+            {
+              name: 'University of Michigan',
+              displayName: 'M',
+              bgColor: 'bg-yellow-500',
+              textColor: 'text-blue-900',
+            },
+            {
+              name: 'NASA BIG Idea',
+              bgColor: 'bg-red-600',
+              logo: (
+                <div className="w-12 h-12 bg-red-600 rounded-full border-4 border-white relative">
+                  <div className="absolute top-1 left-3 w-2 h-2 bg-white rounded-full"></div>
+                  <div className="absolute top-3 left-1 w-1 h-3 bg-white rounded-full"></div>
+                  <div className="absolute top-3 right-1 w-1 h-3 bg-white rounded-full"></div>
+                  <div className="absolute bottom-1 left-2 w-4 h-1 bg-white rounded-full"></div>
+                </div>
+              )
+            },
+            {
+              name: 'MASA Rocketry',
+              displayName: 'MASA',
+              bgColor: 'bg-red-700',
+            },
+            {
+              name: 'Theta Tau',
+              displayName: 'ΘΤ',
+              bgColor: 'bg-green-600',
+              subtitle: 'Theta Tau'
+            }
+          ]}
+        />
       </div>
     </div>
   </section>

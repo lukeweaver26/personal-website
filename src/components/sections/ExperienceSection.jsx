@@ -74,15 +74,15 @@ const ExperienceSection = ({
   handleExperienceClick,
   sectionRef 
 }) => (
-  <section ref={sectionRef} className="min-h-screen pt-20">
-    <div className="max-w-6xl mx-auto px-6 py-20">
+  <section ref={sectionRef} className="min-h-screen pt-12">
+    <div className="max-w-6xl mx-auto px-6 py-12">
       <SectionHeader 
         title="Work Experience"
         subtitle="Professional internships in aerospace, AI, and embedded systems"
         theme={theme}
       />
       
-      <div className="grid gap-8">
+      <div className="grid gap-6">
         {workExperience.map((job) => (
           <ExperienceCard
             key={job.id}

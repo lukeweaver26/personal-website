@@ -1,17 +1,17 @@
-import { GraduationCap, Code, Award, Mail, Linkedin } from 'lucide-react';
+import { GraduationCap, Code, Mail, Linkedin } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import Button from '../ui/Button';
 
 const AboutSection = ({ theme, sectionRef }) => (
-  <section ref={sectionRef} className="min-h-screen pt-20">
-    <div className="max-w-4xl mx-auto px-6 py-20">
+  <section ref={sectionRef} className="min-h-screen pt-12">
+    <div className="max-w-4xl mx-auto px-6 py-12">
       <SectionHeader 
         title="About Me"
         subtitle="Computer Engineering student passionate about innovation"
         theme={theme}
       />
       
-      <div className="space-y-12">
+      <div className="space-y-8">
         {/* Education */}
         <div className="bg-black/30 rounded-lg p-8">
           <div className="flex items-center space-x-3 mb-6">
@@ -63,31 +63,6 @@ const AboutSection = ({ theme, sectionRef }) => (
           </div>
         </div>
 
-        {/* Activities & Interests */}
-        <div className="bg-black/30 rounded-lg p-8">
-          <div className="flex items-center space-x-3 mb-6">
-            <Award style={{ color: theme.primary }} size={28} />
-            <h2 className="text-2xl font-bold" style={{ color: theme.primary }}>Beyond Coding</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-bold mb-3 text-gray-300">Activities</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>• Student Pilot</li>
-                <li>• Advanced Scuba Certification</li>
-                <li>• Theatre Tech Crew & Designer</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-3 text-gray-300">Organizations</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>• Theta Tau Professional Engineering Fraternity</li>
-                <li>• MASA Project Team (Avionics)</li>
-                <li>• University of Michigan Engineering</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
         {/* Contact */}
         <div className="bg-black/30 rounded-lg p-8 text-center">

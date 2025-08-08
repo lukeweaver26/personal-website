@@ -14,7 +14,6 @@ export const projects = [
     status: "In Progress",
     role: "Lead Developer",
     github: "#",
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     details: [
       "Building physics-based vehicle behavior using Box2D engine",
       "Designing modular architecture with separate engines for simulation, graphics, and input",
