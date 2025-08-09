@@ -11,9 +11,27 @@ const Hero = ({ theme, scrollToSection, refs = {} }) => (
             {' '}
             <span style={{ color: theme.text || '#1e293b' }}>Weaver</span>
           </h1>
-        <p className="text-xl mb-4 font-medium" style={{ color: theme.text || '#64748b' }}>
-          Computer Engineering Student | University of Michigan
-        </p>
+          
+          {/* Mobile image - shows after name, before subtitle */}
+          <div className="flex justify-center lg:hidden mb-6">
+            <div 
+              className="w-48 h-48 rounded-full border-4 overflow-hidden shadow-xl"
+              style={{ borderColor: theme.primary }}
+            >
+              <img 
+                src="/hero-image.jpg" 
+                alt="Luke Weaver"
+                className="w-full h-full object-cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+          </div>
+          
+          <p className="text-xl mb-4 font-medium" style={{ color: theme.text || '#64748b' }}>
+            Computer Engineering Student | University of Michigan
+          </p>
           <p className="text-lg mb-8 max-w-3xl lg:max-w-none lg:mx-0 mx-auto opacity-80" style={{ color: theme.text || '#64748b' }}>
             Aerospace Software • Embedded Systems • AI/ML • Full-Stack Development 
           </p>
@@ -44,9 +62,10 @@ const Hero = ({ theme, scrollToSection, refs = {} }) => (
         </div>
         </div>
         
-        <div className="flex-shrink-0">
+        {/* Desktop image - shows on right side */}
+        <div className="hidden lg:block flex-shrink-0">
           <div 
-            className="w-48 h-48 lg:w-56 lg:h-56 rounded-full border-4 overflow-hidden shadow-xl"
+            className="w-56 h-56 rounded-full border-4 overflow-hidden shadow-xl"
             style={{ borderColor: theme.primary }}
           >
             <img 
