@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded background -->
+  <rect x="2" y="2" width="28" height="28" rx="6" ry="6" fill="#4f46e5" fill-opacity="0.15" stroke="#4f46e5" stroke-width="1.5"/>
+  
+  <!-- Terminal icon -->
+  <g transform="translate(8, 8)">
+    <!-- Terminal window -->
+    <rect x="1" y="2" width="14" height="10" rx="1" ry="1" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+    <!-- Terminal prompt line -->
+    <polyline points="3,5 5,7 3,9" fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Terminal cursor -->
+    <line x1="7" y1="9" x2="11" y2="9" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

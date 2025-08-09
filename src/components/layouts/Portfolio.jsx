@@ -12,7 +12,6 @@ import Footer from '../Footer';
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedExperience, setSelectedExperience] = useState(null);
-  const [isAnimating, setIsAnimating] = useState(false);
   const [terminalOpen, setTerminalOpen] = useState(false);
   const [terminalHeight, setTerminalHeight] = useState(192);
   
@@ -28,36 +27,37 @@ const Portfolio = () => {
   };
 
   const handleProjectClick = (project) => {
-    setIsAnimating(true);
     if (selectedProject && selectedProject.id === project.id) {
       setSelectedProject(null);
     } else {
       setSelectedProject(project);
     }
     setSelectedExperience(null);
-    setTimeout(() => setIsAnimating(false), 300);
   };
 
   const handleExperienceClick = (experience) => {
-    setIsAnimating(true);
     if (selectedExperience && selectedExperience.id === experience.id) {
       setSelectedExperience(null);
     } else {
       setSelectedExperience(experience);
     }
     setSelectedProject(null);
-    setTimeout(() => setIsAnimating(false), 300);
   };
 
   const getCurrentTheme = () => {
-    if (selectedProject) return selectedProject.colors;
-    if (selectedExperience) return selectedExperience.colors;
+    // Dynamic color transformation disabled for now - keeping for future iterations
+    // if (selectedProject) return selectedProject.colors;
+    // if (selectedExperience) return selectedExperience.colors;
     
+    // Always return default theme
     return {
-      primary: "#00ff41",
-      secondary: "#00cc33",
-      accent: "#66ff66",
-      bg: "from-gray-950 to-black"
+      primary: "#4f46e5",
+      secondary: "#3730a3",
+      accent: "#6366f1",
+      bg: "from-indigo-50 to-white",
+      text: "#1e293b",
+      cardBg: "bg-white",
+      border: "border-indigo-200"
     };
   };
 
@@ -65,7 +65,8 @@ const Portfolio = () => {
 
 
   return (
-    <div className={`min-h-screen h-full bg-gradient-to-br ${theme.bg} text-white transition-all duration-500`}>
+    <div className={`min-h-screen h-full bg-gradient-to-br ${theme.bg} text-gray-900 transition-all duration-500`} style={{ color: theme.text || '#1e293b' }}>
+      {/* Terminal component disabled for now - keeping for future iterations
       <Terminal
         terminalOpen={terminalOpen}
         terminalHeight={terminalHeight}
@@ -76,30 +77,15 @@ const Portfolio = () => {
         refs={refs}
         setTerminalOpen={setTerminalOpen}
       />
+      */}
 
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
 
       <Navigation
         theme={theme}
         scrollToSection={scrollToSection}
         refs={refs}
-        terminalOpen={terminalOpen}
-        setTerminalOpen={setTerminalOpen}
+        // terminalOpen={terminalOpen} // Disabled for now
+        // setTerminalOpen={setTerminalOpen} // Disabled for now
       />
 
       <main>

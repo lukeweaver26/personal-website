@@ -6,28 +6,29 @@ const Button = ({
   className = "",
   ...props 
 }) => {
-  const baseClasses = "px-8 py-3 font-semibold rounded-lg transition-all hover:scale-105 flex items-center space-x-2";
+  const baseClasses = "px-8 py-3 font-semibold rounded-xl transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center space-x-2";
   
   const variantStyles = {
     primary: {
       style: { 
         backgroundColor: theme.primary, 
-        color: 'black',
-        boxShadow: `0 0 20px ${theme.primary}40`
+        color: 'white',
+        boxShadow: `0 4px 14px ${theme.primary}30`
       }
     },
     outline: {
       className: "border-2",
       style: { 
         borderColor: theme.primary,
-        color: theme.primary
+        color: theme.primary,
+        backgroundColor: 'transparent'
       }
     },
     secondary: {
       className: "border",
       style: { 
         borderColor: theme.primary + '40',
-        backgroundColor: theme.primary + '10',
+        backgroundColor: theme.primary + '15',
         color: theme.primary
       }
     }

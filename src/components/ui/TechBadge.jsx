@@ -7,11 +7,11 @@ const TechBadge = ({ tech, theme, size = "default" }) => {
 
   return (
     <span 
-      className={`${sizeClasses[size]} rounded-full border`}
+      className={`${sizeClasses[size]} rounded-full font-medium transition-all duration-200 hover:scale-105`}
       style={{ 
-        borderColor: theme.primary + '40',
-        backgroundColor: theme.primary + '10',
-        color: theme.primary
+        backgroundColor: theme.primary + '15',
+        color: theme.primary,
+        border: `1px solid ${theme.primary}30`
       }}
     >
       {tech}

@@ -6,14 +6,17 @@ export const projects = [
     description: "Modular traffic simulation in C++ modeling self-driving car networks with real-time physics, built with Box2D and ImGui for scalable vehicle-to-vehicle communication testing.",
     tech: ["C++", "Box2D", "ImGui", "Physics Simulation"],
     colors: {
-      primary: "#3b82f6",
-      secondary: "#1e40af",
-      accent: "#60a5fa",
-      bg: "from-blue-950 to-slate-900"
+      primary: "#0ea5e9",
+      secondary: "#0284c7",
+      accent: "#38bdf8",
+      bg: "from-sky-50 to-blue-100",
+      text: "#0c4a6e",
+      cardBg: "bg-white",
+      border: "border-sky-200"
     },
     status: "In Progress",
     role: "Lead Developer",
-    github: "#",
+    github: "https://github.com/lukeweaver26/crossing_guard",
     details: [
       "Building physics-based vehicle behavior using Box2D engine",
       "Designing modular architecture with separate engines for simulation, graphics, and input",
@@ -27,14 +30,16 @@ export const projects = [
     description: "Full-stack tool tracking application deployed for daily use by 50+ students, streamlining check-in/check-out processes and improving accountability in the University of Michigan Engineering Makerspace.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     colors: {
-      primary: "#8b5cf6",
-      secondary: "#7c3aed",
-      accent: "#a78bfa",
-      bg: "from-purple-950 to-slate-900"
+      primary: "#10b981",
+      secondary: "#059669",
+      accent: "#34d399",
+      bg: "from-emerald-50 to-green-100",
+      text: "#047857",
+      cardBg: "bg-white",
+      border: "border-emerald-200"
     },
     status: "Live",
     role: "Lead Developer",
-    github: "#",
     details: [
       "Deployed system used daily by 50+ students",
       "Improved tool access accountability and reduced manual tracking",
@@ -51,11 +56,13 @@ export const projects = [
       primary: "#f59e0b",
       secondary: "#d97706",
       accent: "#fbbf24",
-      bg: "from-orange-950 to-slate-900"
+      bg: "from-amber-50 to-orange-100",
+      text: "#92400e",
+      cardBg: "bg-white",
+      border: "border-amber-200"
     },
     status: "Completed - Finalist",
     role: "Software & Controls Developer",
-    github: "#",
     details: [
       "Researched and developed heat dissipation modeling program",
       "Setup Dockerized ROS development environment",
@@ -68,16 +75,20 @@ export const projects = [
     title: "Fullstack Course Planning Application",
     period: "Apr. 2023 - Dec. 2023",
     description: "System analyzing University of Michigan student schedules to generate major requirement fulfillment reports, built with modular backend architecture and intuitive React frontend.",
-    tech: ["React", "Node.js", "Express", "TDD"],
+    tech: ["React", "Node.js", "Express"],
     colors: {
       primary: "#ef4444",
       secondary: "#dc2626",
       accent: "#f87171",
-      bg: "from-red-950 to-slate-900"
+      bg: "from-red-50 to-rose-100",
+      text: "#991b1b",
+      cardBg: "bg-white",
+      border: "border-red-200"
     },
     status: "Completed",
     role: "Lead Developer",
-    github: "#",
+    github: "https://github.com/lukeweaver26/mplan-frontend",
+    githubBackend: "https://github.com/lukeweaver26/mplan-backend",
     details: [
       "Implemented modular, expandable backend using test-driven development",
       "Built intuitive React frontend with live updates",
@@ -94,11 +105,13 @@ export const projects = [
       primary: "#06b6d4",
       secondary: "#0891b2",
       accent: "#67e8f9",
-      bg: "from-cyan-950 to-slate-900"
+      bg: "from-cyan-50 to-teal-100",
+      text: "#155e75",
+      cardBg: "bg-white",
+      border: "border-cyan-200"
     },
     status: "Completed",
     role: "Lead Backend Developer",
-    github: "#",
     details: [
       "Collaborated with 5 team members on full project lifecycle",
       "Built prototype backend with Node.js and Express.js",
