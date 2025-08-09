@@ -35,7 +35,6 @@ export const projects = [
     status: "Live",
     role: "Lead Developer",
     github: "#",
-    videoUrl: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
     details: [
       "Deployed system used daily by 50+ students",
       "Improved tool access accountability and reduced manual tracking",
@@ -57,7 +56,6 @@ export const projects = [
     status: "Completed - Finalist",
     role: "Software & Controls Developer",
     github: "#",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     details: [
       "Researched and developed heat dissipation modeling program",
       "Setup Dockerized ROS development environment",
@@ -80,7 +78,6 @@ export const projects = [
     status: "Completed",
     role: "Lead Developer",
     github: "#",
-    videoUrl: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
     details: [
       "Implemented modular, expandable backend using test-driven development",
       "Built intuitive React frontend with live updates",
@@ -102,7 +99,6 @@ export const projects = [
     status: "Completed",
     role: "Lead Backend Developer",
     github: "#",
-    videoUrl: "https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4",
     details: [
       "Collaborated with 5 team members on full project lifecycle",
       "Built prototype backend with Node.js and Express.js",
